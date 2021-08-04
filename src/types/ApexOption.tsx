@@ -152,3 +152,10 @@ export interface Chart {
   };
   legend?: ChartLegend;
 }
+
+export interface TooltipCustom {
+  series: any;
+  seriesIndex: any;
+  dataPointIndex: any;
+  w: any;
+}
