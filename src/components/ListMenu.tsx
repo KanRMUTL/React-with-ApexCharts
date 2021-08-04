@@ -12,19 +12,17 @@ function ListMenu({ lists }: Props) {
   return (
     <div style={{ width: 250 }}>
       <List>
-        <Router>
-          {lists.map((list, index) => (
-            <ListItem
-              component={Link}
-              key={index}
-              to={list.path}
-              onClick={() => toggleSidebar(false)}
-              button
-            >
-              <ListItemText primary={list.label} />
-            </ListItem>
-          ))}
-        </Router>
+        {lists.map((list, index) => (
+          <ListItem
+            component={Link}
+            key={index}
+            onClick={() => toggleSidebar(false)}
+            to={list.path}
+            button
+          >
+            <ListItemText primary={list.label} />
+          </ListItem>
+        ))}
       </List>
     </div>
   );

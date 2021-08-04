@@ -8,4 +8,8 @@ export const basePath: Path[] = [
     label: "Basic",
     path: "/basic",
   },
+  {
+    label: "Tooltip",
+    path: "/tooltip",
+  },
 ];
