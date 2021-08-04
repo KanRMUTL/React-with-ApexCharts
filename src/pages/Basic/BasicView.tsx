@@ -9,6 +9,7 @@ interface Props {
 function BasicView({ option, series }: Props) {
   return (
     <div>
+      <h5>Basic Chart</h5>
       <Chart options={option} series={series} type="bar" width="500" />
     </div>
   );
