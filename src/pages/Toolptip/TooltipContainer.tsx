@@ -28,22 +28,30 @@ function TooltipContainer() {
       onDatasetHover: {
         highlightDataSeries: false,
       },
-      custom: function ({
-        series,
-        seriesIndex,
-        dataPointIndex,
-        w,
-      }: TooltipCustom) {
-        return (
-          '<div style="' +
-          badgeStyle +
-          '">' +
-          "<span>" +
-          series[seriesIndex][dataPointIndex] +
-          "</span>" +
-          "</div>"
-        );
+      x: {
+        formatter: () => "Custom format of x-axis",
       },
+      y: {
+        title: {
+          formatter: (seriesName: any) => "",
+        },
+      },
+      // custom: function ({
+      //   series,
+      //   seriesIndex,
+      //   dataPointIndex,
+      //   w,
+      // }: TooltipCustom) {
+      //   return (
+      //     '<div style="' +
+      //     badgeStyle +
+      //     '">' +
+      //     "<span>" +
+      //     series[seriesIndex][dataPointIndex] +
+      //     "</span>" +
+      //     "</div>"
+      //   );
+      // },
     },
   });
 
