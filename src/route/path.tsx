@@ -12,4 +12,8 @@ export const basePath: Path[] = [
     label: "Tooltip",
     path: "/tooltip",
   },
+  {
+    label: "Multiple series",
+    path: "/multi-series",
+  },
 ];
