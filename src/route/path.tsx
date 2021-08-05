@@ -16,4 +16,8 @@ export const basePath: Path[] = [
     label: "Multiple series",
     path: "/multi-series",
   },
+  {
+    label: "Responsive Chart",
+    path: "/responsive-chart",
+  },
 ];

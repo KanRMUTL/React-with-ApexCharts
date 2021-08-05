@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import BasicContainer from "../pages/Basic/BasicContainer";
 import TooltipContainer from "../pages/Toolptip/TooltipContainer";
 import MultiSeriesContainer from "../pages/MultiSeries/MultiSeriesContainer";
+import ResponsiveContainer from "../pages/Responsive/ResponsiveContainer";
 import { useToggleSidebar } from "../context/SidebarContext";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
         <Route path="/basic" component={BasicContainer} />
         <Route path="/tooltip" component={TooltipContainer} />
         <Route path="/multi-series" component={MultiSeriesContainer} />
+        <Route path="/responsive-chart" component={ResponsiveContainer} />
       </Switch>
     </div>
   );

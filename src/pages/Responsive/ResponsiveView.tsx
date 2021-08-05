@@ -12,8 +12,8 @@ interface Props {
 function MultiSeriesView({ option, series, type }: Props) {
   return (
     <div>
-      <h5>Multiple Series</h5>
-      <Chart options={option} series={series} type={type} width={800} />
+      <h5>Responsive Chart</h5>
+      <Chart options={option} series={series} type={type} width="800" />
     </div>
   );
 }
