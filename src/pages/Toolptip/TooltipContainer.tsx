@@ -1,20 +1,6 @@
 import React, { useState } from "react";
 import TooltipView from "./TooltipView";
-import { TooltipCustom } from "../../types/ApexOption";
 
-const badgeStyle = `
-display: inline-block;
-padding: .25em .4em;
-font-size: 75%;
-font-weight: 700;
-line-height: 1;
-text-align: center;
-white-space: nowrap;
-vertical-align: baseline;
-border-radius: .25rem;
-color: #fff;
-          background-color: #28a745;
-`;
 function TooltipContainer() {
   const [option] = useState({
     chart: {
@@ -36,22 +22,6 @@ function TooltipContainer() {
           formatter: (seriesName: any) => "",
         },
       },
-      // custom: function ({
-      //   series,
-      //   seriesIndex,
-      //   dataPointIndex,
-      //   w,
-      // }: TooltipCustom) {
-      //   return (
-      //     '<div style="' +
-      //     badgeStyle +
-      //     '">' +
-      //     "<span>" +
-      //     series[seriesIndex][dataPointIndex] +
-      //     "</span>" +
-      //     "</div>"
-      //   );
-      // },
     },
   });
 

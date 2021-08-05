@@ -1,6 +1,6 @@
 import React from "react";
 import { List, ListItem, ListItemText } from "@material-ui/core";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Path } from "../route/path";
 import { useToggleSidebar } from "../context/SidebarContext";
 interface Props {

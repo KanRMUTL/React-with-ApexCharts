@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MultiSeriesView from "./MultiSeriesView";
-import { TooltipCustom, ChartTypes } from "../../types/ApexOption";
+import { ChartTypes } from "../../types/ApexOption";
 import { ApexOptions } from "apexcharts";
 import { eachDayOfInterval, add, format } from "date-fns";
 
