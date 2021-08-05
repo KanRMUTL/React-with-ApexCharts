@@ -6,7 +6,10 @@ import { useToggleSidebar } from "../context/SidebarContext";
 function Router() {
   const toggleSidebar = useToggleSidebar();
   return (
-    <div style={{ padding: 8 }} onClick={() => toggleSidebar(false)}>
+    <div
+      style={{ padding: 8, display: "flex", justifyContent: "center" }}
+      onClick={() => toggleSidebar(false)}
+    >
       <Switch>
         <Route path="/basic" component={BasicContainer} />
         <Route path="/tooltip" component={TooltipContainer} />
