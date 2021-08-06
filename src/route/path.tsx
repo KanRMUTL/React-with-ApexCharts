@@ -20,4 +20,8 @@ export const basePath: Path[] = [
     label: "Responsive Chart",
     path: "/responsive-chart",
   },
+  {
+    label: "Chart Color",
+    path: "/chart-color",
+  },
 ];
