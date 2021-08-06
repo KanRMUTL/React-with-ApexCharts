@@ -24,4 +24,8 @@ export const basePath: Path[] = [
     label: "Chart Color",
     path: "/chart-color",
   },
+  {
+    label: "Chart Method",
+    path: "/chart-method",
+  },
 ];

@@ -5,6 +5,7 @@ import TooltipContainer from "../pages/Toolptip/TooltipContainer";
 import MultiSeriesContainer from "../pages/MultiSeries/MultiSeriesContainer";
 import ResponsiveContainer from "../pages/Responsive/ResponsiveContainer";
 import ChartColorContainer from "../pages/ChartColor/ChartColorContainer";
+import ChartMethodContainer from "../pages/ChartMethod/ChartMethodContainer";
 import { useToggleSidebar } from "../context/SidebarContext";
 function Router() {
   const toggleSidebar = useToggleSidebar();
@@ -19,6 +20,7 @@ function Router() {
         <Route path="/multi-series" component={MultiSeriesContainer} />
         <Route path="/responsive-chart" component={ResponsiveContainer} />
         <Route path="/chart-color" component={ChartColorContainer} />
+        <Route path="/chart-method" component={ChartMethodContainer} />
       </Switch>
     </div>
   );
