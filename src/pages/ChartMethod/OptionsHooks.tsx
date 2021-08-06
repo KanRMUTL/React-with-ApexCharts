@@ -41,6 +41,15 @@ const OptionsHooks = ({ chartId }: Props) => {
     ]);
   }, []);
 
+  useEffect(() => {
+    setOptions({
+      ...options,
+      xaxis: {
+        categories: categories,
+      },
+    });
+  }, [categories]);
+
   const appendData = () => {
     console.log("wow");
     setSeries(
@@ -50,10 +59,7 @@ const OptionsHooks = ({ chartId }: Props) => {
       })
     );
 
-    setCategories([...categories, categories[categories.length - 1]++]);
-    console.log("categories", categories);
-    console.log("serires: ", series);
-    console.log("option", options);
+    setCategories([...categories, ++categories[categories.length - 1]]);
   };
 
   return {
