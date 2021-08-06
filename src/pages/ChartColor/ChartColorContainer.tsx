@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ChartColorView from "./ChartColorView";
-import { ChartTypes } from "../../types/ApexOption";
+import { ChartTypes, ChartHorizontalAlign } from "../../types/ApexOption";
 
 interface ColorCallback {
   value: any;
@@ -29,6 +29,15 @@ function BasicContainer() {
     stroke: {
       show: true,
       width: 2,
+    },
+    subtitle: {
+      text: "Products",
+      align: ChartHorizontalAlign.center,
+      offsetY: 0,
+      style: {
+        fontSize: "18px",
+        margin: "25",
+      },
     },
   });
 
