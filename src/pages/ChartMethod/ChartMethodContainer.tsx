@@ -5,17 +5,17 @@ import OptionsHooks from "./OptionsHooks";
 
 function ChartMethodContainer() {
   const chartId = "chart-method";
-  const { options, series, appendData } = OptionsHooks({
+  const { options, series, appendData, setOptions } = OptionsHooks({
     chartId,
   });
   return (
     <div>
       <ChartMethodView
-        id={chartId}
         option={options}
         series={series}
         type={ChartTypes.bar}
         appendData={appendData}
+        setOptions={setOptions}
       />
     </div>
   );

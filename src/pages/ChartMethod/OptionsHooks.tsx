@@ -66,6 +66,7 @@ const OptionsHooks = ({ chartId }: Props) => {
     categories,
     options,
     series,
+    setOptions,
     appendData,
   };
 };
